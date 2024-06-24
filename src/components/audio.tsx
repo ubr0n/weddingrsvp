@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const AudioPlayer = ({
-  setIsLoading,
+  // setIsLoading,
   audioFile,
 }: {
-  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  // setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   audioFile: string;
 }) => {
   const audioRef = useRef<HTMLAudioElement>(new Audio(audioFile));
@@ -17,7 +17,7 @@ const AudioPlayer = ({
     audio.currentTime = 0;
 
     const handleCanPlayThrough = () => {
-      setIsLoading(false);
+      // setIsLoading(false);
       audio.play();
     };
 
@@ -27,7 +27,7 @@ const AudioPlayer = ({
       audio.pause();
       audio.removeEventListener("canplaythrough", handleCanPlayThrough);
     };
-  }, [audioFile, setIsLoading]);
+  }, [audioFile]);
 
   const handlePlayPause = () => {
     const audio = audioRef.current;
