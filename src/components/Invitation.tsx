@@ -1,9 +1,11 @@
 import React from "react";
 import coupleImage from "../assets/nepalicouple.png";
+import Confetti from "./Cnnfetti";
 type Props = {
   setInvitationOpened: React.Dispatch<React.SetStateAction<boolean>>;
   setShowConfetti: React.Dispatch<React.SetStateAction<boolean>>;
 };
+import animationData from "../assets/confetti2.json";
 
 const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
   const handleButtonClick = () => {
@@ -19,10 +21,10 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
         className="aspect-square h-[250px] md:h-[500px] transition-all duration-1000 ease-in-out rounded-full"
       />
       <h1 className="text-4xl">Navin and Srijana</h1>
-      <h2 className="font-bold text-xl">July 20, 2024</h2>
+      <h2 className="font-bold text-xl">Sunday, July 14, 2024</h2>
       <button
         onClick={handleButtonClick}
-        className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold "
+        className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold z-10"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +42,7 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
         </svg>
         <p className="mt-1">Open Invitation</p>
       </button>
+      <Confetti data={animationData} trigger={true} loopCount={0} />
     </div>
   );
 };

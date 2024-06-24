@@ -6,9 +6,10 @@ import {
 } from "date-fns";
 type Props = {
   targetDate: string;
+  isOnlyDay: boolean;
 };
 
-const TimeUntil = ({ targetDate }: Props) => {
+const TimeUntil = ({ targetDate, isOnlyDay }: Props) => {
   const [timeLeft, setTimeLeft] = useState<string>("");
 
   useEffect(() => {
@@ -22,21 +23,29 @@ const TimeUntil = ({ targetDate }: Props) => {
       }
 
       const duration = intervalToDuration({ start: now, end: targetDate });
-      const formattedDuration = formatDuration(duration);
+      const formattedDuration = formatDuration(
+        isOnlyDay
+          ? {
+              days: duration.days,
+            }
+          : duration
+      );
       setTimeLeft(formattedDuration);
     };
 
     const timerId = setInterval(updateTimer, 1000);
 
     return () => clearInterval(timerId);
-  }, [targetDate]);
+  }, [isOnlyDay, targetDate]);
 
   return (
     <div>
-      {timeLeft?.includes("Hurrey") ? null : (
+      {isOnlyDay ? null : timeLeft?.includes("Hurrey") ? null : (
         <p className="text-gray-500">See you in</p>
       )}
-      <p>{timeLeft}</p>
+      <p className={`${isOnlyDay ? "" : "border"} text-sm p-2 px-4 rounded-xl`}>
+        {timeLeft}
+      </p>
     </div>
   );
 };

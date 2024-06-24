@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
-import animationData from "../assets/confetti.json";
 interface ConfettiProps {
   trigger: boolean;
   loopCount: number;
+  data: any;
 }
 
-const Confetti: React.FC<ConfettiProps> = ({ trigger, loopCount }) => {
+const Confetti: React.FC<ConfettiProps> = ({ trigger, loopCount, data }) => {
   const lottieRef = useRef<LottieRefCurrentProps>(null);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Confetti: React.FC<ConfettiProps> = ({ trigger, loopCount }) => {
     <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center">
       <Lottie
         lottieRef={lottieRef}
-        animationData={animationData}
+        animationData={data}
         loop={false}
         autoplay={false}
         className="h-screen w-screen"
