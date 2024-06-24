@@ -1,6 +1,8 @@
 import React from "react";
 import coupleImage from "../assets/nepalicouple.png";
+import ganesh from "../assets/ganesh2.png";
 import Confetti from "./Cnnfetti";
+
 type Props = {
   setInvitationOpened: React.Dispatch<React.SetStateAction<boolean>>;
   setShowConfetti: React.Dispatch<React.SetStateAction<boolean>>;
@@ -13,18 +15,24 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
     setTimeout(() => setShowConfetti(true), 1000); // Reset confetti after 5 seconds
   };
   return (
-    <div className="flex flex-col items-center justify-center gap-3">
-      <h1 className="text-3xl">The Wedding of</h1>
+    <div className="relative  flex flex-col items-center justify-center gap-2">
+      <img
+        src={ganesh}
+        alt="gamesh img"
+        className="fixed top-10 left-10 h-[80px]"
+      />
+      <h1 className="font-cursive">The Wedding</h1>
       <img
         src={coupleImage}
         alt="couple image"
-        className="aspect-square h-[250px] md:h-[500px] transition-all duration-1000 ease-in-out rounded-full"
+        className="aspect-square h-[230px] md:h-[500px] transition-all duration-1000 ease-in-out rounded-full"
       />
-      <h1 className="text-4xl">Navin and Srijana</h1>
+      <h1 className="text-3xl font-cursive">Of</h1>
+      <h1 className="font-cursive">Navin and Srijana</h1>
       <h2 className="font-bold text-xl">Sunday, July 14, 2024</h2>
       <button
         onClick={handleButtonClick}
-        className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold z-10"
+        className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold z-10 mt-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
