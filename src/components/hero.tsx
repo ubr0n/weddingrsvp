@@ -5,7 +5,7 @@ import TimeUntil from "./TimeUntil";
 const Hero = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center h-screen">
-      <h1 className="font-cursive">Navin & Srijana Wedding</h1>
+      <h1 className="font-cursive z-50">Navin & Srijana Wedding</h1>
       <div className="heroCoupleImage h-[300px] aspect-square md:h-[400px] lg:h-[500px] object-cover duration-1000">
         <img src={coupleImage} alt="couple image" className="" />
       </div>
