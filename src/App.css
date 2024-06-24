@@ -1,23 +1,60 @@
 #root {
-  max-width: 1280px;
+  width: 100vw;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
 .heroCoupleImage{
   aspect-ratio: 1;
   object-fit: cover;
+  transition: 0.2s ease-in;
   /* --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
   -webkit-mask-box-image: var(--_m);
              mask-border: var(--_m);
-  clip-path: polygon(-41% 0,50% 91%, 141% 0); */
-  transition: 0.2s ease-in;
-  /* animation: heartBeat 1s infinite 1s; */
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  animation: heartBeat 1s infinite 1s; */
 }
 .mouseScrollDownAnimation{
   transition: 0.5s ease-in-out;
   animation: mouseScrollDownAnimation 1s infinite 1s;
+}
+.jodiAnimation1{
+  animation: 1.5s linear leftRight ;
+}
+.jodiAnimation2{
+  animation: 1.5s rightLeft linear;
+}
+.textFadeAnimation{
+  animation-delay: 1s;
+  animation: 1s textFadeUp linear;
+}
+@keyframes textFadeUp {
+  0%{
+    opacity: 0;
+    transform: translateY(100%)
+  }100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rightLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%)
+  }100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes leftRight {
+  0%{
+    opacity: 0;
+    transform: translateX(100%)
+  }100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes mouseScrollDownAnimation {
   0%{

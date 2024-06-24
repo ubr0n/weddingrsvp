@@ -7,6 +7,9 @@ import Hero from "./components/hero";
 import audiofile from "./assets/audiotrimmed.mp3";
 import Confetti from "./components/Cnnfetti";
 import Invitation from "./components/Invitation";
+import InvMessage from "./components/InvMessage";
+import Quote from "./components/Quote";
+import animationData from "./assets/confetti.json";
 
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -15,16 +18,16 @@ function App() {
   const [showConfetti, setShowConfetti] = useState(false);
 
   return (
-    <div className="">
+    <>
       <img
         src={floral}
         alt=""
-        className="fixed -top-2 right-0 w-[200px] aspect-square md:w-[30%]"
+        className="fixed z-10 -top-2 right-0 w-[200px] aspect-square md:w-[30%] max-w-[450px]"
       />
       <img
         src={floral}
         alt=""
-        className="fixed -bottom-2 left-0 aspect-square rotate-180 w-[200px] md:w-[30%]"
+        className="fixed z-10 -bottom-2 left-0 aspect-square rotate-180 w-[200px] md:w-[30%] max-w-[450px]"
       />
       {!invitationOpened ? (
         <Invitation
@@ -34,13 +37,13 @@ function App() {
       ) : (
         <>
           <Hero />
-          {/* {showConfetti ? ( */}
-          <Confetti trigger={showConfetti} loopCount={2} />
-          {/* ) : null} */}
+          <Confetti trigger={showConfetti} loopCount={2} data={animationData} />
           <AudioPlayer audioFile={audiofile} />
+          <InvMessage />
+          <Quote />
         </>
       )}
-    </div>
+    </>
   );
 }
 
