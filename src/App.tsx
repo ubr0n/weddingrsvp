@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import "./App.css";
 import floral from "./assets/floral.png";
-import LoadingScreen from "./components/LoadingScreen";
 import AudioPlayer from "./components/audio";
 import Hero from "./components/hero";
 import audiofile from "./assets/audiotrimmed.mp3";
@@ -9,10 +9,8 @@ import Confetti from "./components/Cnnfetti";
 import Invitation from "./components/Invitation";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  // if (isLoading) {
-  //   return <LoadingScreen />;
-  // }
+  // const [isLoading, setIsLoading] = useState(true);
+
   const [invitationOpened, setInvitationOpened] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -39,7 +37,7 @@ function App() {
           {/* {showConfetti ? ( */}
           <Confetti trigger={showConfetti} loopCount={2} />
           {/* ) : null} */}
-          <AudioPlayer setIsLoading={setIsLoading} audioFile={audiofile} />
+          <AudioPlayer audioFile={audiofile} />
         </>
       )}
     </div>

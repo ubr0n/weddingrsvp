@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const LoadingScreen = (props: Props) => {
+const LoadingScreen = () => {
   return <div>LoadingScreen</div>;
 };
 

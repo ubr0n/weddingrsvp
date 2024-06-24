@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from "../assets/confetti.json";
 interface ConfettiProps {
@@ -19,7 +19,7 @@ const Confetti: React.FC<ConfettiProps> = ({ trigger, loopCount }) => {
 
   useEffect(() => {
     if (lottieRef.current) {
-      lottieRef.current.loop = loopCount;
+      (lottieRef.current as any).loop = loopCount;
     }
   }, [loopCount]);
   return (

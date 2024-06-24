@@ -1,9 +1,8 @@
-import React from "react";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import coupleImage from "../assets/couple.png";
 import TimeUntil from "./TimeUntil";
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center h-screen">
       <h1 className="font-cursive text-3xl" style={{ fontWeight: 600 }}>
