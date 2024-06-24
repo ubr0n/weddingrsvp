@@ -63,7 +63,7 @@ const BrideGroom = ({
       <img
         src={img}
         alt="groom img"
-        className={`h-[200px] rounded-full jodiAnimation${
+        className={`h-[200px] aspect-square rounded-full jodiAnimation${
           isVisible ? index + 1 : ""
         }`}
       />
