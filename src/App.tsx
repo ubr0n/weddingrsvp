@@ -22,12 +22,12 @@ function App() {
       <img
         src={floral}
         alt=""
-        className="fixed z-10 -top-2 right-0 w-[200px] aspect-square md:w-[30%] max-w-[450px]"
+        className="fixed z-10 -top-2 right-0 w-[150px] aspect-square md:w-[30%] max-w-[450px]"
       />
       <img
         src={floral}
         alt=""
-        className="fixed z-10 -bottom-2 left-0 aspect-square rotate-180 w-[200px] md:w-[30%] max-w-[450px]"
+        className="fixed z-10 -bottom-2 left-0 aspect-square rotate-180 w-[150px] md:w-[30%] max-w-[450px]"
       />
       {!invitationOpened ? (
         <Invitation
@@ -36,8 +36,8 @@ function App() {
         />
       ) : (
         <>
-          <Hero />
-          <Confetti trigger={showConfetti} loopCount={2} data={animationData} />
+          <Hero setShowConfetti={setShowConfetti} />
+          <Confetti trigger={showConfetti} data={animationData} />
           <AudioPlayer audioFile={audiofile} />
           <InvMessage />
           <Quote />

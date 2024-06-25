@@ -28,7 +28,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: 'Josefin Sans', sans-serif;
   background: #ffffff;
   color: #1a1a1a;
