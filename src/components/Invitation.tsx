@@ -15,20 +15,20 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
     setTimeout(() => setShowConfetti(true), 1000); // Reset confetti after 5 seconds
   };
   return (
-    <div className="relative  flex flex-col items-center justify-center gap-2">
+    <div className="relative  flex flex-col items-center justify-center gap-2 ">
       <img
         src={ganesh}
         alt="gamesh img"
-        className="fixed top-10 left-10 h-[80px]"
+        className="fixed top-5 md:top-10 md:left-10 left-5 h-[70px] md:h-[80px]"
       />
-      <h1 className="font-cursive">The Wedding</h1>
+      <h1 className="font-cursive text-4xl md:text-5xl">The Wedding</h1>
       <img
         src={coupleImage}
         alt="couple image"
         className="aspect-square h-[230px] md:h-[500px] transition-all duration-1000 ease-in-out rounded-full"
       />
-      <h1 className="text-3xl font-cursive">Of</h1>
-      <h1 className="font-cursive">Navin and Srijana</h1>
+      <h1 className="text-lg italic">of</h1>
+      <h1 className="font-cursive">Navin & Srijana</h1>
       <h2 className="font-bold text-xl">Sunday, July 14, 2024</h2>
       <button
         onClick={handleButtonClick}
@@ -50,7 +50,7 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
         </svg>
         <p className="mt-1">Open Invitation</p>
       </button>
-      <Confetti data={animationData} trigger={true} loopCount={0} />
+      <Confetti data={animationData} trigger={true} />
     </div>
   );
 };
