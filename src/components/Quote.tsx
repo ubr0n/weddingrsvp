@@ -14,20 +14,30 @@ const Quote = () => {
       </div>
       <WaveSvg color="#fefdda" isStart={true} />
       <div className="bg-[#fefdda]  w-full p-5 flex flex-col items-center  gap-2 pb-20">
-        <p className="text-lg">See you in:</p>
-        <div className="border border-red-300 p-10 h-16 w-16 flex items-center justify-center rounded-full">
-          <TimeUntil isOnlyDay={true} targetDate={"2024-07-14T05:45:00.000Z"} />
+        {/* <p className="text-lg">See you in:</p> */}
+        <div className="flex flex-col gap-2 items-center justify-center">
+          <TimeUntil
+            isOnlyDay={false}
+            targetDate={"2024-11-23T05:45:00.000Z"}
+            title="Bihey"
+            showHeader={true}
+          />
+          <TimeUntil
+            showHeader={false}
+            isOnlyDay={false}
+            targetDate={"2024-11-25T05:45:00.000Z"}
+            title="Reception"
+          />
         </div>
         <a
-          href="https://maps.app.goo.gl/auLRR3kQApqfXeVz5"
+          href="https://www.google.com/maps/place/Parijat+Party+Event+Pvt+Ltd/@27.7502614,85.3155947,999m/data=!3m1!1e3!4m6!3m5!1s0x39eb19de31a467eb:0x83d7379f779593e5!8m2!3d27.7500129!4d85.3178783!16s%2Fg%2F11r_n297r_?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           className="flex gap-2 items-center justify-center z-10"
         >
           <PinIcon className="h-5 w-5 mb-1" />
-          <p> Royal Janata Banquet</p>
+          <p>Parijat Party Event Pvt.</p>
         </a>
-        <p>Indreni Pul, Tarakeshwar</p>
-        <p>Kathmandu</p>
+        <p>Baniyataar, Kathmandu</p>
       </div>
     </div>
   );
