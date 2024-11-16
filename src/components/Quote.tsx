@@ -19,7 +19,7 @@ const Quote = () => {
           <TimeUntil
             isOnlyDay={false}
             targetDate={"2024-11-23T05:45:00.000Z"}
-            title="Bihey"
+            title="Marriage"
             showHeader={true}
           />
           <TimeUntil
