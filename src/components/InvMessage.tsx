@@ -1,5 +1,5 @@
-import bride from "../assets/bride.png";
-import groom from "../assets/groom.png";
+import bride from "../assets/bride.jpg";
+import groom from "../assets/groom.jpg";
 import useIsVisible from "../hooks/useVisible";
 
 const InvMessage = () => {
@@ -8,13 +8,13 @@ const InvMessage = () => {
       name: "Navin Pandey",
       img: groom,
       subtitle: "Son of",
-      parent: "Keshav Raj Pandey & Prem Kumari Pandey",
+      parent: "Shyam Kumar Lohani & Sabita Lohani",
     },
     {
       name: "Srijana Sitaula",
       img: bride,
       subtitle: "Daughter of",
-      parent: "Krishna Prasad Sitaula & Radha Sitaula",
+      parent: "Laxmi Prasad Panthi & Gita Gyawali Panthi",
     },
   ];
   return (
@@ -63,7 +63,7 @@ const BrideGroom = ({
       <img
         src={img}
         alt="groom img"
-        className={`h-[200px] aspect-square rounded-full jodiAnimation${
+        className={`h-[200px] aspect-square rounded-full object-cover jodiAnimation${
           isVisible ? index + 1 : ""
         }`}
       />

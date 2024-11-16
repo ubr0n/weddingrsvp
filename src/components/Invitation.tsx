@@ -15,7 +15,7 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
     setTimeout(() => setShowConfetti(true), 1000); // Reset confetti after 5 seconds
   };
   return (
-    <div className="relative  flex flex-col items-center justify-center gap-2 ">
+    <div className="relative flex flex-col items-center justify-center gap-2 ">
       <img
         src={ganesh}
         alt="gamesh img"
@@ -25,11 +25,12 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
       <img
         src={coupleImage}
         alt="couple image"
-        className="aspect-square h-[230px] md:h-[500px] transition-all duration-1000 ease-in-out rounded-full"
+        className="aspect-square h-[220px] md:h-[450px] transition-all duration-1000 ease-in-out rounded-full"
       />
       <h1 className="text-lg italic">of</h1>
-      <h1 className="font-cursive">Navin & Srijana</h1>
-      <h2 className="font-bold text-xl">Sunday, July 14, 2024</h2>
+      <h1 className="font-cursive">Santosh & Niharika</h1>
+      <h2 className="font-bold text-xl">Bihey: Manghir 08, 2081</h2>
+      <h2 className="font-bold text-xl">Reception: Manghir 10, 2024</h2>
       <button
         onClick={handleButtonClick}
         className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold z-10 mt-2"

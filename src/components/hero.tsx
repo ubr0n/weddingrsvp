@@ -10,23 +10,35 @@ const Hero = ({
   return (
     <div className="flex flex-col gap-3 items-center justify-center min-h-[100dvh] max-h-fit  w-full p-4">
       <h1 className="font-cursive z-50 text-3xl md:text-5xl w-3/4 md:w-full">
-        Navin & Srijana's Wedding
+        Santosh & Niharika's Wedding
       </h1>
       <img
         onClick={() => setShowConfetti(true)}
         src={coupleImage}
         alt="couple image"
-        className="h-[250px] md:h-[300px] lg:h-[400px] aspect-square duration-1000"
+        className="h-[250px] md:h-[290px] lg:h-[370px] aspect-square duration-1000"
       />
-      <h3 className="font-bold text-2xl">Sunday, July 14, 2024</h3>
-      <TimeUntil isOnlyDay={false} targetDate={"2024-07-14T05:45:00.000Z"} />
+      <h3 className="font-bold text-2xl">Bihey: Manghir 08, 2081</h3>
+      <h3 className="font-bold text-2xl">Reception: Manghir 10, 2081</h3>
+      <TimeUntil
+        isOnlyDay={false}
+        targetDate={"2024-11-23T05:45:00.000Z"}
+        title="Bihey"
+        showHeader={true}
+      />
+      <TimeUntil
+        showHeader={false}
+        isOnlyDay={false}
+        targetDate={"2024-11-25T05:45:00.000Z"}
+        title="Reception"
+      />
       <a
-        href="https://maps.app.goo.gl/auLRR3kQApqfXeVz5"
+        href="https://www.google.com/maps/place/Parijat+Party+Event+Pvt+Ltd/@27.7502614,85.3155947,999m/data=!3m1!1e3!4m6!3m5!1s0x39eb19de31a467eb:0x83d7379f779593e5!8m2!3d27.7500129!4d85.3178783!16s%2Fg%2F11r_n297r_?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
         target="_blank"
         className="flex gap-2 items-center justify-center z-10"
       >
         <PinIcon className="h-5 w-5 mb-1" />
-        <p> Royal Janata Banquet</p>
+        <p>Parijat Party Event Pvt.</p>
       </a>
       <div className="flex flex-col gap-1 items-center justify-center mt-4">
         <div className="h-[30px] rounded-lg border-2 w-[20px] justify-center flex p-[5px]">
