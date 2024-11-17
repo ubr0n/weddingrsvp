@@ -18,8 +18,8 @@ const Hero = ({
         alt="couple image"
         className="h-[250px] md:h-[290px] lg:h-[370px] aspect-square duration-1000"
       />
-      <h3 className="font-bold text-2xl">Marriage: Manghir 08, 2081</h3>
-      <h3 className="font-bold text-2xl">Reception: Manghir 10, 2081</h3>
+      <h3 className="font-bold text-2xl">Marriage: Mangshir 08, 2081</h3>
+      <h3 className="font-bold text-2xl">Reception: Mangshir 10, 2081</h3>
       <TimeUntil
         isOnlyDay={false}
         targetDate={"2024-11-23T05:45:00.000Z"}
