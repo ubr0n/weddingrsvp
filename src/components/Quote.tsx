@@ -14,7 +14,7 @@ const Quote = () => {
       </div>
       <WaveSvg color="#fefdda" isStart={true} />
       <div className="bg-[#fefdda]  w-full p-5 flex flex-col items-center  gap-2 pb-20">
-        {/* <p className="text-lg">See you in:</p> */}
+        <p className="text-lg">See you in:</p>
         <div className="flex flex-col gap-2 items-center justify-center">
           <TimeUntil
             isOnlyDay={false}
@@ -22,22 +22,32 @@ const Quote = () => {
             title="Marriage"
             showHeader={true}
           />
+          <a
+            href="https://maps.app.goo.gl/yP6GD726g1QJTB3h8"
+            target="_blank"
+            className="flex gap-2 items-center justify-center z-10"
+          >
+            <PinIcon className="h-5 w-5 mb-1" />
+            <p>Marriage: PANAS BANQUET</p>
+          </a>
+          <br />
           <TimeUntil
             showHeader={false}
             isOnlyDay={false}
             targetDate={"2025-02-19T05:45:00.000Z"}
             title="Reception"
           />
+          <a
+            href="https://maps.app.goo.gl/AuKPytDXarGV19mT9"
+            target="_blank"
+            className="flex gap-2 items-center justify-center z-10"
+          >
+            <PinIcon className="h-5 w-5 mb-1" />
+            <p>Reception: Hotel the Narayani</p>
+          </a>
         </div>
-        <a
-          href="https://maps.app.goo.gl/AuKPytDXarGV19mT9"
-          target="_blank"
-          className="flex gap-2 items-center justify-center z-10"
-        >
-          <PinIcon className="h-5 w-5 mb-1" />
-          <p>Hotel the Narayani</p>
-        </a>
-        <p>Lali Guransh Chowk Bus Stop, Mahendra Hwy, Gaindakot 33000, Nepal</p>
+
+        {/* <p>Lali Guransh Chowk Bus Stop, Mahendra Hwy, Gaindakot 33000, Nepal</p> */}
       </div>
     </div>
   );

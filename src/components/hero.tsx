@@ -19,26 +19,35 @@ const Hero = ({
         className="h-[250px] md:h-[290px] lg:h-[370px] aspect-square duration-1000"
       />
       <h3 className="font-bold text-2xl">Marriage: Falgun 06, 2081</h3>
-      <h3 className="font-bold text-2xl">Reception: Falgun 07, 2081</h3>
       <TimeUntil
         isOnlyDay={false}
         targetDate={"2025-02-18T05:45:00.000Z"}
         title="Marriage"
         showHeader={true}
       />
+      <a
+        href="https://maps.app.goo.gl/yP6GD726g1QJTB3h8"
+        target="_blank"
+        className="flex gap-2 items-center justify-center z-10"
+      >
+        <PinIcon className="h-5 w-5 mb-1" />
+        <p>Marriage: PANAS BANQUET</p>
+      </a>
+      <h3 className="font-bold text-2xl">Reception: Falgun 07, 2081</h3>
       <TimeUntil
         showHeader={false}
         isOnlyDay={false}
         targetDate={"2025-02-19T05:45:00.000Z"}
         title="Reception"
       />
+
       <a
         href="https://maps.app.goo.gl/AuKPytDXarGV19mT9"
         target="_blank"
         className="flex gap-2 items-center justify-center z-10"
       >
         <PinIcon className="h-5 w-5 mb-1" />
-        <p>Hotel the Narayani</p>
+        <p>Reception: Hotel the Narayani</p>
       </a>
       <div className="flex flex-col gap-1 items-center justify-center mt-4">
         <div className="h-[30px] rounded-lg border-2 w-[20px] justify-center flex p-[5px]">

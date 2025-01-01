@@ -50,9 +50,9 @@ Props) => {
 
   return (
     <div>
-      {showHeader ? (
+      {/* {showHeader ? (
         <p className="text-gray-500 font-bold">See you in:</p>
-      ) : null}
+      ) : null} */}
       <p className={`${isOnlyDay ? "" : "border"} text-sm p-2 px-4 rounded-xl`}>
         {title ? `${title}: ` : ""}
         {timeLeft}
