@@ -8,7 +8,7 @@ type Props = {
   targetDate: string;
   isOnlyDay: boolean;
   title?: string;
-  showHeader: boolean;
+  showHeader?: boolean;
   // eventName: string;
 };
 
@@ -16,8 +16,8 @@ const TimeUntil = ({
   targetDate,
   isOnlyDay,
   title,
-  showHeader,
-}: // eventName,
+}: // showHeader,
+// eventName,
 Props) => {
   const [timeLeft, setTimeLeft] = useState<string>("");
 
