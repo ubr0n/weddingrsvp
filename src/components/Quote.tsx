@@ -18,26 +18,26 @@ const Quote = () => {
         <div className="flex flex-col gap-2 items-center justify-center">
           <TimeUntil
             isOnlyDay={false}
-            targetDate={"2024-11-23T05:45:00.000Z"}
+            targetDate={"2025-02-18T05:45:00.000Z"}
             title="Marriage"
             showHeader={true}
           />
           <TimeUntil
             showHeader={false}
             isOnlyDay={false}
-            targetDate={"2024-11-25T05:45:00.000Z"}
+            targetDate={"2025-02-19T05:45:00.000Z"}
             title="Reception"
           />
         </div>
         <a
-          href="https://www.google.com/maps/place/Parijat+Party+Event+Pvt+Ltd/@27.7502614,85.3155947,999m/data=!3m1!1e3!4m6!3m5!1s0x39eb19de31a467eb:0x83d7379f779593e5!8m2!3d27.7500129!4d85.3178783!16s%2Fg%2F11r_n297r_?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+          href="https://maps.app.goo.gl/AuKPytDXarGV19mT9"
           target="_blank"
           className="flex gap-2 items-center justify-center z-10"
         >
           <PinIcon className="h-5 w-5 mb-1" />
-          <p>Parijat Party Event Pvt.</p>
+          <p>Hotel the Narayani</p>
         </a>
-        <p>Baniyataar, Kathmandu</p>
+        <p>Lali Guransh Chowk Bus Stop, Mahendra Hwy, Gaindakot 33000, Nepal</p>
       </div>
     </div>
   );

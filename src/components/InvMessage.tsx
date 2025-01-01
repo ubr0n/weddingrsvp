@@ -5,16 +5,16 @@ import useIsVisible from "../hooks/useVisible";
 const InvMessage = () => {
   const jodi = [
     {
-      name: "Santosh Kumar Lohani",
+      name: "Ranjan Sapkota",
       img: groom,
       subtitle: "Son of",
-      parent: "Shyam Kumar Lohani & Sabita Lohani",
+      parent: "Rudra Prasad Sapkota & Khagi Kumari Sapkota",
     },
     {
-      name: "Niharika Panthi",
+      name: "Sujata Ghimire",
       img: bride,
       subtitle: "Daughter of",
-      parent: "Laxmi Prasad Panthi & Gita Gyawali Panthi",
+      parent: "Netra Lal Ghimire & Om Kumari Ghimire",
     },
   ];
   return (
