@@ -29,8 +29,8 @@ const Invitation = ({ setInvitationOpened, setShowConfetti }: Props) => {
       />
       <h1 className="text-lg italic">of</h1>
       <h1 className="font-cursive">Ranjan & Sujata</h1>
-      <h2 className="font-bold text-xl">Marriage: Falgun 06, 2081</h2>
-      <h2 className="font-bold text-xl">Reception: Falgun 07, 2081</h2>
+      <h2 className="font-bold text-xl">Marriage: Falgun 09, 2081</h2>
+      <h2 className="font-bold text-xl">Reception: Falgun 10, 2081</h2>
       <button
         onClick={handleButtonClick}
         className="text-[#24765d] bg-[#d1f8e2] border-none outline-none rounded-[20px] flex gap-2 justify-center font-bold z-10 mt-2"
